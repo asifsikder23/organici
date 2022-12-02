@@ -2,14 +2,14 @@ import React from "react";
 
 const Nav3 = () => {
   return (
-    <div>
+    <div className="my-3">
       <div className=" flex justify-between">
-        <div className="dropdown">
+        <div className="dropdown hidden lg:flex">
           <label
             tabIndex={0}
-            className="btn btn-ghost bg-green-600 hover:bg-slate-600 text-white w-full"
+            className="btn btn-ghost bg-green-600 hover:bg-slate-600 text-white"
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const Nav3 = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-500-100 rounded-box w-52 mt-14"
           >
             <li>
               <a>Homepage</a>
@@ -49,7 +49,7 @@ const Nav3 = () => {
         </div>
         <div className="flex navbar-center">
           <div className="form-control ">
-            <select className="select select-bordered rounded-none">
+            <select className="select select-bordered rounded-none w-32 lg:w-full">
               <option disabled selected>
                 All Categories
               </option>
@@ -63,15 +63,18 @@ const Nav3 = () => {
           <div>
             <input
               type="text"
-              className="file-input file-input-bordered w-full max-w-xs rounded-none "
+              className="file-input file-input-bordered w-full lg:w-96 rounded-none "
             />
           </div>
-          <button className="btn">Search</button>
+          <button className="btn"><span className="hidden lg:flex">Search</span>
+          <i class="fa-solid fa-magnifying-glass flex lg:hidden"></i>
+          </button>
+          
         </div>
-        <div>
-            <button className="btn w-full bg-green-600 border-none">
+        <div className="hidden lg:flex">
+          <button className="btn w-full bg-green-600 border-none">
             <p>+8801872400423</p>
-            </button>
+          </button>
         </div>
       </div>
     </div>

@@ -3,10 +3,10 @@ import logo from "../../Assets/logo1.webp";
 
 const Nav2 = () => {
   return (
-    <div>
+    <div className="mt-3">
       <div className="navbar justify-between items-center">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <div className="dropdown lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -24,13 +24,13 @@ const Nav2 = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-white"
           >
             <li>
               <a>Item 1</a>
             </li>
             <li tabIndex={0}>
-              <a className="justify-between">
+              <div className="justify-between">
                 Parent
                 <svg
                   className="fill-current"
@@ -41,7 +41,7 @@ const Nav2 = () => {
                 >
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
-              </a>
+              </div>
               <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
                 <option value="Organic2">Organic1</option>
                 <option value="Organic2">Organic1</option>
@@ -54,10 +54,11 @@ const Nav2 = () => {
               <a>Item 3</a>
             </li>
           </ul>
-          <div>
+          </div>
+          <div className="">
             <img src={logo} alt="" />
           </div>
-        </div>
+        
 
         <div className="mt-5 flex justify-between hidden lg:flex">
           <div className="flex gap-8">
@@ -71,13 +72,13 @@ const Nav2 = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       className="w-4 h-4"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                       />
                     </svg>
@@ -103,7 +104,7 @@ const Nav2 = () => {
                     <ul className="p-4 space-y-1 border-t border-gray-200">
                       <li>
                         <label
-                          for="FilterInStock"
+                          htmlFor="FilterInStock"
                           className="inline-flex items-center gap-2"
                         >
                           <input
@@ -120,7 +121,7 @@ const Nav2 = () => {
 
                       <li>
                         <label
-                          for="FilterPreOrder"
+                          htmlFor="FilterPreOrder"
                           className="inline-flex items-center gap-2"
                         >
                           <input
@@ -137,7 +138,7 @@ const Nav2 = () => {
 
                       <li>
                         <label
-                          for="FilterOutOfStock"
+                          htmlFor="FilterOutOfStock"
                           className="inline-flex items-center gap-2"
                         >
                           <input
@@ -167,13 +168,13 @@ const Nav2 = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       className="w-4 h-4"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                       />
                     </svg>
@@ -198,7 +199,7 @@ const Nav2 = () => {
                     <div className="p-4 border-t border-gray-200">
                       <div className="flex justify-between gap-4">
                         <label
-                          for="FilterPriceFrom"
+                          htmlFor="FilterPriceFrom"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -212,7 +213,7 @@ const Nav2 = () => {
                         </label>
 
                         <label
-                          for="FilterPriceTo"
+                          htmlFor="FilterPriceTo"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -240,13 +241,13 @@ const Nav2 = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       className="w-4 h-4"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                       />
                     </svg>
@@ -271,7 +272,7 @@ const Nav2 = () => {
                     <div className="p-4 border-t border-gray-200">
                       <div className="flex justify-between gap-4">
                         <label
-                          for="FilterPriceFrom"
+                          htmlFor="FilterPriceFrom"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -285,7 +286,7 @@ const Nav2 = () => {
                         </label>
 
                         <label
-                          for="FilterPriceTo"
+                          htmlFor="FilterPriceTo"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -313,13 +314,13 @@ const Nav2 = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       className="w-4 h-4"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                       />
                     </svg>
@@ -344,7 +345,7 @@ const Nav2 = () => {
                     <div className="p-4 border-t border-gray-200">
                       <div className="flex justify-between gap-4">
                         <label
-                          for="FilterPriceFrom"
+                          htmlFor="FilterPriceFrom"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -358,7 +359,7 @@ const Nav2 = () => {
                         </label>
 
                         <label
-                          for="FilterPriceTo"
+                          htmlFor="FilterPriceTo"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -386,13 +387,13 @@ const Nav2 = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       className="w-4 h-4"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                       />
                     </svg>
@@ -417,7 +418,7 @@ const Nav2 = () => {
                     <div className="p-4 border-t border-gray-200">
                       <div className="flex justify-between gap-4">
                         <label
-                          for="FilterPriceFrom"
+                          htmlFor="FilterPriceFrom"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -431,7 +432,7 @@ const Nav2 = () => {
                         </label>
 
                         <label
-                          for="FilterPriceTo"
+                          htmlFor="FilterPriceTo"
                           className="flex items-center gap-2"
                         >
                           <span className="text-sm text-gray-600">$</span>
@@ -452,10 +453,11 @@ const Nav2 = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
-          <div className="dropdown">
+        <div className="flex items-center gap-1">
+          <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost w-full">
-              <p>My Account</p>
+              <p className="hidden lg:flex">My Account</p>
+              <i className="fa-regular fa-user flex lg:hidden text-2xl"></i>
             </label>
             <ul
               tabIndex={0}
